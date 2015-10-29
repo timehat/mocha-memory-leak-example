@@ -5,7 +5,7 @@ npm install
 ```
 
 Open "test.html" in Chrome. Take a Heap Snapshot. See this:
-![Screenshot of memory leak](/heap-snapshot.png "Heap Snapshot")
+![Screenshot of memory leak](/heap-snapshot-leaking.png "Heap Snapshot")
 
 Test file is this:
 ```
@@ -35,3 +35,5 @@ One solution (though tedious) would be to add the following to the test file:
 ```
 
 Which allows the object to now be garbage collected.
+
+![Screenshot of memory leak cleaned up](/heap-snapshot-clean.png "Clean Heap Snapshot")
